@@ -11,7 +11,7 @@ int main() {
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
 
     //Definição das variáveis da carta A
-    char estadoA;
+    char estadoA[20];
     char codA[5];
     char cidadeA[20];
     int populacaoA;
@@ -20,7 +20,7 @@ int main() {
     float pibA;
 
     //Definição das variáveis da carta B
-    char estadoB;
+    char estadoB[20];
     char codB[5];
     char cidadeB[20];
     int populacaoB;
@@ -36,7 +36,7 @@ int main() {
     printf("Cadastro da Carta A\n");
 
     printf("Informe o estado: ");
-    scanf("%c", &estadoA); //Leitura do nome informado e armazenamento do valor na variável estadoA
+    scanf("%s", estadoA); //Leitura do nome informado e armazenamento do valor na variável estadoA
 
     printf("Informe o código da cidade: ");
     scanf("%s", codA); //Leitura do código informado e armazenamento do valor na variável codA    
@@ -59,8 +59,8 @@ int main() {
     //Cadastro da carta B
     printf("Cadastro da Carta B\n");
 
-//    printf("Informe o estado: ");
-//    scanf("%c", &estadoB); //Leitura do nome informado e armazenamento do valor na variável estadoB
+    printf("Informe o estado: ");
+    scanf("%s", estadoB); //Leitura do nome informado e armazenamento do valor na variável estadoB
 
     printf("Informe o código da cidade: ");
     scanf("%s", codB); //Leitura do código informado e armazenamento do valor na variável codB    
@@ -86,7 +86,7 @@ int main() {
 
     //Exibição da carta A
     printf("\n*** CARTA A ***\n");
-    printf("Estado: %c\n", estadoA);
+    printf("Estado: %s\n", estadoA);
     printf("Código: %s\n", codA);
     printf("Nome da Cidade: %s\n", cidadeA);
     printf("Área: %.1f km2 \n", areaA);
@@ -96,7 +96,7 @@ int main() {
 
     //Exibição da carta B
     printf("\n*** CARTA B ***\n");
-    printf("Estado: %c\n", estadoB);
+    printf("Estado: %s\n", estadoB);
     printf("Código: %s\n", codB);
     printf("Nome da Cidade: %s\n", cidadeB);
     printf("Área: %.1f km2 \n", areaB);
